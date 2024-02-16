@@ -105,6 +105,7 @@ li:last-child {
     border-bottom: 1px solid;
     border-right: none;
     margin: 20px;
+    padding: 10px;
   }
   li:last-child {
     border-bottom: 1px solid;
