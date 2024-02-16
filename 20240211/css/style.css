@@ -1,14 +1,118 @@
 @charset "utf-8";
 
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #000;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    list-style: none;
-    max-width: 960px;
-    margin: 0 auto;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/*CSSリセット終わり*/
+
+h1 {
+  font-size: 30px;
+  font-family: Source Han Code JP;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 ul li {
-    padding: 0 20 px;
+  font-family: Han Code JP;
+  padding: 0 20px;
+  border-right: 1px solid;
+}
+
+li:last-child {
+  border: none;
+}
+
+.header {
+  display: flex;
+  margin: 50px 0;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrap-blue,
+.wrap-red {
+  width: 30.6%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.wrap-blue {
+  background: blue;
+}
+.wrap-red {
+  background: red;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 767px) {
+  .wrap {
+    display: block;
+  }
+
+  .wrap-blue,
+  .wrap-red {
+    width: 100%;
+  }
+
+  ul li {
+    border-bottom: 1px solid;
+    border-right: none;
+    margin: 20px;
+  }
+  li:last-child {
+    border-bottom: 1px solid;
+  }
+  ul {
+    display: block;
+  }
+  .header {
+    display: block;
+  }
 }
