@@ -38,22 +38,15 @@ img {
 
 h1 {
   font-size: 30px;
-  font-family: Source Han Code JP;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   list-style: none;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 ul li {
-  font-family: Han Code JP;
   padding: 0 20px;
   border-right: 1px solid;
 }
@@ -64,7 +57,9 @@ li:last-child {
 
 .header {
   display: flex;
-  margin: 50px 0;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 50px auto;
 }
 
 .wrap {
@@ -78,7 +73,7 @@ li:last-child {
 
 .wrap-blue,
 .wrap-red {
-  width: 30.6%;
+  width: 31.25%;
   height: 300px;
   margin-bottom: 20px;
 }
@@ -104,7 +99,7 @@ li:last-child {
   ul li {
     border-bottom: 1px solid;
     border-right: none;
-    margin: 20px;
+    margin: 20px 0;
     padding: 10px;
   }
   li:last-child {
@@ -115,5 +110,6 @@ li:last-child {
   }
   .header {
     display: block;
+    padding: 0 20px;
   }
 }
