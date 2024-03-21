@@ -40,7 +40,11 @@ img {
 }
 
 /*CSSリセット終わり*/
+body {
+  background-color: #e8d9bf;
+}
 
+/*header*/
 .header-logo {
   width: 226px;
 }
@@ -70,4 +74,288 @@ img {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif";
   text-align: center;
+}
+
+/*main*/
+.lead {
+  text-align: center;
+  color: #4f260b;
+  padding: 100px 0 0 0;
+}
+
+.lead_ttl {
+  font-size: 82px;
+  font-feature-settings: "palt";
+  margin-bottom: 30px;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+
+.lead_txt {
+  font-size: 30px;
+  margin-bottom: 48px;
+}
+
+.article_txt {
+  font-size: 23px;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+}
+
+/*about*/
+.about {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.about_img img {
+  border-bottom-right-radius: 82px;
+}
+
+.logo_img {
+  max-width: 100%;
+  width: 272px;
+  margin-bottom: 68px;
+  vertical-align: bottom;
+  border: none;
+}
+
+.about_contens {
+  display: block;
+}
+.about_txt {
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 1.38;
+}
+
+.article_txt {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*MENU*/
+
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu_logo {
+  width: 151px;
+  margin: 0 auto 40px;
+}
+
+.menu_contns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_itmes img {
+  border-top-right-radius: 41px;
+}
+
+.menu_txt {
+  font-size: 17px;
+  width: 100%;
+  line-height: 1.47;
+  text-align: justify;
+  text-align-last: left;
+  padding-top: 10px;
+}
+
+h3 {
+  font-size: 38px;
+  margin-top: -12px;
+  margin-left: 14px;
+  color: #d30202;
+  font-weight: normal;
+}
+
+/*gallery*/
+
+.gallery {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gallery_img {
+  width: 245px;
+  margin: 0 auto 24px;
+}
+.gallery_images {
+  display: flex;
+}
+
+/*event*/
+
+.event {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 27px;
+}
+
+.event_contns {
+  padding: 36px;
+  border: 3px solid #4f260b;
+  background: #fff;
+  line-height: 25px;
+  text-decoration: underline;
+}
+
+.event_img {
+  width: 175px;
+  margin: 0 auto 27px;
+}
+
+.time {
+  margin-right: 50px;
+}
+
+.event_logo {
+  width: 214px;
+  margin: 0 auto 47px;
+}
+
+/*access*/
+
+.access_logo {
+  width: 213px;
+  margin: 0 auto 27px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #fff;
+  padding-top: 82px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 80px;
+}
+
+.footer_block {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto 70px;
+}
+.footer_img {
+  width: 227px;
+  margin-right: 60px;
+  margin-left: 10px;
+}
+.footer_txt {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.95;
+}
+
+.footer_ttl {
+  font-size: 16px;
+  text-align: center;
+}
+/*ハンバーガーメニュー*/
+.sp_nav {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .pc_nav,
+  .sp_btn {
+    display: none;
+  }
+}
+.sp_btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  display: block;
+  height: 23px;
+  cursor: pointer;
+  z-index: 2;
+}
+.sp_btn span {
+  position: relative;
+  top: 10px;
+  display: block;
+  width: 33px;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.sp_btn span::before,
+.sp_btn span::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 33px;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.sp_btn span::before {
+  bottom: 10px;
+}
+
+.sp_btn span::after {
+  top: 10px;
+}
+
+/**/
+
+.sp_btn.open span {
+  background: transparent;
+}
+
+.sp_btn.open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.sp_btn.open span::after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/**/
+.sp_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.sp_nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sp_nav ul li {
+  padding: 20px 0;
+  color: #fff;
+  font-size: 18px;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
 }

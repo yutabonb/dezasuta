@@ -7,10 +7,10 @@
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="header-slider">
             <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
@@ -26,64 +26,147 @@
                     <li><a href="">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn"><span></span> </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">EVENT</a></li>
+                    <li><a href="">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <p class="nav">
-    <div class="notes_txt">Have a happy day From a cup of coffee.</div>
-    <h2>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
-    <div class="notes_txt">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-        足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</div>
-    </p>
+    <main>
 
-    <div class="about_conts">
-        <img src="images/pc_about-100.jpg" alt="コーヒーで乾杯">
-        <img class="logo_img" src="images/about_us@2x.png" alt="ABOUT US">
-        <h3>私たちが提供する<br>こだわりのコーヒー</h3>
-        <div class="article_txt">サービスを提供する上での想いや心がけていることなど、メッ<br>
-            セージを文章で紹介します。サービスを提供する上での想い<br>
-            や心がけていることなど、メッセージを文章で紹介します。サー<br>
-            ビスを提供する上での想いや心がけていることなど、メッセー<br>
-            ジを文章で紹介します。サービスを提供する上での想いや心<br>
-            がけていることなど、メッセージを文章で紹介します。サービス<br>
-            を提供する上での想いや心がけていることなど、メッセージを<br>
-            文章で紹介します。
+        <div class="lead">
+            <p class="lead_txt">Have a happy day From a cup of coffee.</p>
+            <p class="lead_ttl">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
+            <p class="article_txt">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            </p>
         </div>
+
+        <section id="about" class="about">
+            <div class="about_img">
+                <img src="images/pc_about-100.jpg" alt="コーヒーで乾杯">
+            </div>
+            <div class="about_contens">
+                <img class="logo_img" src="images/about_us@2x.png" alt="ABOUT US">
+                <p class="about_txt">私たちが提供する<br>こだわりのコーヒー</p>
+                <p class="article_txt">サービスを提供する上での想いや心がけていることなど、メッ<br>
+                    セージを文章で紹介します。サービスを提供する上での想い<br>
+                    や心がけていることなど、メッセージを文章で紹介します。サー<br>
+                    ビスを提供する上での想いや心がけていることなど、メッセー<br>
+                    ジを文章で紹介します。サービスを提供する上での想いや心<br>
+                    がけていることなど、メッセージを文章で紹介します。サービス<br>
+                    を提供する上での想いや心がけていることなど、メッセージを<br>
+                    文章で紹介します。
+                </p>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2 class="menu_logo"><img src="images/menu@2x.png" alt="MENU"></h2>
+
+            <ul class="menu_contns">
+                <li class="menu_itmes">
+                    <img class="menu_images" src="images/pc_menu_drink-100.jpg" alt="ドリンクの画像">
+                    <h3>Drink</h3>
+                    <p class="menu_txt">ドリンクメニューの概要を100文字程度で<br>
+                        紹介します。素材やこだわりなどをアピー<br>ルしていきます。</p>
+                </li>
+                <li class="menu_itmes">
+                    <img class="menu_images" src="images/pc_menu_food-100.jpg" alt="フードの画像">
+                    <h3>Food</h3>
+                    <div class="menu_txt">フードメニューの概要を100文字程度で紹<br>
+                        介します。素材やこだわりなどをアピールし<br>
+                        ていきます。</div>
+                </li>
+                <li class="menu_itmes">
+                    <img class="menu_images" src="images/pc_menu_sweets-100.jpg" alt="スイート画像">
+                    <h3>Sweets</h3>
+                    <p class="menu_txt">スイーツメニューの概要を100文字程度で<br>
+                        紹介します。素材やこだわりなどをアピー<br>
+                        ルしていきます。</p>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section id="gallery" class="gallery">
+            <h2 class="gallery_img"> <img src="images/gallery@2x.png" alt="GALLER"></h2>
+            <div class="gallery_images">
+                <img src="images/pc_gallary_05-100.jpg" alt="店内の様子">
+                <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                <img src="images/pc_gallary_03-100.jpg" alt="店内の様子２">
+                <img src="images/pc_gallary_02-100.jpg" alt="店内看板">
+                <img src="images/pc_gallary_01-100.jpg" alt="コーヒーを淹れている画像">
+            </div>
+        </section>
+
+        <section id="event" class="event">
+            <h2 class="event_img"><img src="images/event@2x.png" alt="EVENT"></h2>
+            <ul class="event_contns">
+                <li class="menu_itmes">
+                    <time datetime="2020-06-23">2020-06-23</time>
+                    <a href="news">7月はイベント出店のため0/0お休みします</a>
+                </li>
+                <li class="menu_itmes">
+                    <time datetime="2020-3-15"> 2020-3-15</time>
+                    <a href="news">春の新商品新発売。話題のあのブランドとコラボ</a>
+                </li>
+                <li class="menu_itmes">
+                    <time datetime="2020.02.06">2020.02.06</time>
+                    <a href="news">コーヒーの日で30%OFFイベントを開催[3日間限定]</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="access" class="access">
+            <h2 class="access_logo"><img src="images/access@2x.png" alt="ACCESS"></h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.642503969921!2d139.810424974454!3d35.71041402837249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188fc84fe7ed77%3A0x4184d5eec9bca4a4!2z44Gh44GE44GL44KP44KJ44KT44GpIOadseS6rOOCueOCq-OCpOODhOODquODvOOCv-OCpuODs-ODu-OCveODqeODnuODgeW6lw!5e0!3m2!1sja!2sjp!4v1710995057254!5m2!1sja!2sjp"
+                width="1920" height="471" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_block">
+            <div class="footer_img"><img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE"></div>
+            <div class="footer_txt">
+                <p>OPEN 18:00 / CLOSE 24:00</p>
+                <p>〒150-0022</p>
+                <p>東京都渋谷区東京南123デザインビルB1</p>
+                <p> MAIL：info@designcafe.tokyo</p>
+            </div>
+        </div>
+        <div class="footer_ttl">
+            <small>© 2021 DESIGN CAFE</small>
+        </div>
+
+    </footer>
+    <!--<div class="pagetop">
+        <a href="#header"><img src="images/to_top@2x.png" alt="pagetop"></a>
     </div>
-
-    <div class="menu_conts">
-        <img class="logo_img" src="images/menu@2x.png" alt="MENU">
+<div class="pagetop">
+        <a href="https://twiles1695.github.io/designcafe/#header"><img src="./デザインカフェ_files/to_top@2x.png" alt="PAGE TOP"></a>
     </div>
-    <img class="menu_images">
-    <img src="images/pc_menu_drink-100.jpg" alt="ドリンクの画像">
-    <img src="images/pc_menu_food-100.jpg" alt="フードの画像">
-    <img src="images/pc_menu_sweets-100.jpg" alt="スイート画像">
+-->
 
-
-    <div class="menu_txt">
-        <div class="samll_txt">ドリンクメニューの概要を100文字程度で<br>
-            紹介します。素材やこだわりなどをアピールしていきます。</div>
-        <div class="menu_txt">フードメニューの概要を100文字程度で紹<br>
-            介します。素材やこだわりなどをアピールし<br>
-            ていきます。</div>
-        <div class="menu_txt">スイーツメニューの概要を100文字程度で<br>
-            紹介します。素材やこだわりなどをアピー<br>
-            ルしていきます。</div>
-    </div>
-
-    <div class="menu_items">
-        <h3>Drink</h3>
-        <h3>Food</h3>
-        <h3>Sweets</h3>
-    </div>
-
-
-    <div class="gallery_conts">
-        <img class="logo_img" src="images/gallery@2x.png" alt="">
-    </div>
-
-
-
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                //ここの中に記述
+                $(".sp_btn").toggleClass('open');
+                $(".sp_nav").fadeToggle();
+            });
+        });
+    </script>
 </body>
 
 </html>
