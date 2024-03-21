@@ -266,6 +266,13 @@ h3 {
   font-size: 16px;
   text-align: center;
 }
+
+/*レスポンシブ*/
+@media screen and (max-width: 767px) {
+  .about {
+    display: block;
+  }
+}
 /*ハンバーガーメニュー*/
 .sp_nav {
   display: none;
