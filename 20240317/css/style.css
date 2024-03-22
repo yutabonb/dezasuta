@@ -1,7 +1,5 @@
 @charset "utf-8";
-html {
-  scroll-behavior: smooth;
-}
+
 html,
 body,
 h1,
@@ -20,6 +18,7 @@ li {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
 }
 a {
   text-decoration: none;
@@ -107,7 +106,6 @@ body {
 /*about*/
 .about {
   display: flex;
-  gap: 80px;
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 100px;
@@ -127,7 +125,6 @@ body {
 }
 
 .about_contens {
-  max-width: 50%;
   display: block;
 }
 .about_txt {
@@ -163,11 +160,7 @@ body {
   align-items: center;
 }
 
-.menu_items {
-  width: 30%;
-}
-
-.menu_items img {
+.menu_itmes img {
   border-top-right-radius: 41px;
 }
 
@@ -191,8 +184,10 @@ h3 {
 /*gallery*/
 
 .gallery {
-  max-width: 1000px;
+  margin: 0 auto;
   padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .gallery_img {
@@ -209,20 +204,15 @@ h3 {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 70px 27px 10px 10px;
+  padding-top: 190px;
+  padding-bottom: 27px;
 }
 
-.event_block {
-  display: flex;
-  justify-content: center;
+.event_contns {
   padding: 36px;
   border: 3px solid #4f260b;
   background: #fff;
-  font-size: 23px;
   line-height: 25px;
-}
-
-.event_itmes a {
   text-decoration: underline;
 }
 
@@ -231,8 +221,8 @@ h3 {
   margin: 0 auto 27px;
 }
 
-.event time {
-  margin-right: 47px;
+.time {
+  margin-right: 50px;
 }
 
 .event_logo {
@@ -241,80 +231,61 @@ h3 {
 }
 
 /*access*/
-.access {
-  margin-top: 82px;
-}
+
 .access_logo {
   width: 213px;
   margin: 0 auto 27px;
-}
-.access iframe {
-  display: block;
-  width: 100%;
-  height: 470px;
 }
 
 /*footer*/
 
 .footer {
   background-color: #fff;
-  padding-top: 78px;
+  padding-top: 82px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 78px;
+  padding-bottom: 80px;
 }
 
 .footer_block {
   display: flex;
   max-width: 1000px;
   margin: 0 auto 70px;
-  color: black;
 }
 .footer_img {
   width: 227px;
   margin-right: 60px;
   margin-left: 10px;
 }
-.footer_txt p {
+.footer_txt {
+  color: #000;
   font-size: 20px;
   line-height: 1.95;
 }
 
 .footer_ttl {
-  font-size: 80%;
+  font-size: 16px;
   text-align: center;
-}
-
-.pagetop {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  width: 125px;
 }
 
 /*レスポンシブ*/
 @media screen and (max-width: 767px) {
-  .header-slider {
-    width: 100%;
-  }
-  .header-logo {
-    width: 187px;
-  }
   .about {
     display: block;
   }
-}
-/*ハンバーガーメニュー*/
-.sp_nav {
-  display: none;
-}
 
-@media screen and (max-width: 1100px) {
-  .pc_nav,
+  /*ハンバーガーメニュー*/
+  .sp_nav,
   .sp_btn {
     display: none;
   }
 
+  @media screen and (max-width: 1100px) {
+    .pc_nav,
+    .sp_btn {
+      display: none;
+    }
+  }
   .sp_btn {
     position: absolute;
     top: 20px;
