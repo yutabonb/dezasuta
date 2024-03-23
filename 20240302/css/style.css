@@ -331,16 +331,15 @@ h3 {
   /*footer*/
 }
 @media screen and (max-width: 365px) {
+  /*header*/
+  /*lead*/
+  /*about*/
+  /*menu*/
+  /*gallery*/
+  /*event*/
+  /*access*/
+  /*footer*/
 }
-/*header*/
-/*lead*/
-/*about*/
-/*menu*/
-/*gallery*/
-/*event*/
-/*access*/
-/*footer*/
-
 /*ハンバーガーメニュー*/
 .sp_nav {
   display: none;
