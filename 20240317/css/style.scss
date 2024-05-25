@@ -20,6 +20,7 @@ li {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
 }
 a {
   text-decoration: none;
@@ -146,7 +147,7 @@ body {
   margin-top: 100px;
   justify-content: space-between;
 
-  img{
+  &_img{
     border-bottom-right-radius: 82px;
   }
   
@@ -326,57 +327,6 @@ h3 {
   width: 125px;
 }
 
-/*レスポンシブ*/
-@media screen and (max-width: 767px) {
-  .header_slider {
-    width: 100%;
-    height: 375px;
-  }
-  .header_logo {
-    width: 187px;
-  }
-  .lead {
-    padding: 40px 0 0;
-  }
-  /*about*/
-  .about {
-    display: block;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .about_img img {
-    border-bottom-right-radius: 0%;
-  }
-
-  /*menu*/
-  .menu {
-    display: block;
-    padding-right: 38px;
-    padding-left: 38px;
-  }
-
-  /*gallery*/
-
-  /*event*/
-  .event_block {
-    
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
-  }
-
-  /*access*/
-  .access {
-    margin-top: 82px;
-  }
-  /*footer*/
-  .footer_block {
-    display: block;
-    margin-bottom: 36px;
-}
-}
-
 @media screen and (max-width: 1100px) {
   .pc_nav {
     display: none;
@@ -467,19 +417,64 @@ h3 {
 
 
 
-
-@media screen and (max-width: 365px) {
-  /*header*/
-  /*lead*/
+/*レスポンシブ*/
+@media screen and (max-width: 767px) {
+  .header{
+    _wrap {
+      display: block;
+    }
+    &_slider {
+      width: 100%;
+      height: 375px;
+    }
+    &_logo {
+      width: 187px;
+    }
+    &lead {
+      padding: 40px 0 0;
+    }
+  }
   /*about*/
+  .about {
+  display: block;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  
+    &_img {
+    display: block;
+    width:100%;
+    border-bottom-right-radius: 0%;
+    }
+  
   /*menu*/
+  .menu {
+    display: block;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
   /*gallery*/
+
   /*event*/
+  .event_block {
+    
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  }
+
   /*access*/
+  .access {
+    margin-top: 82px;
+  }
   /*footer*/
+  .footer_block {
+    display: block;
+    margin-bottom: 36px;
 }
-/*ハンバーガーメニュー*/
-.sp_nav {
-  display: none;
 }
+
+
 
